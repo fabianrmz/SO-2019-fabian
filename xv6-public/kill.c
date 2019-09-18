@@ -12,6 +12,11 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++)
-    kill(atoi(argv[i]));
+    if(atoi(argv[i])!=1){
+        kill(atoi(argv[i]));
+    }else{
+        printf(1,"Are you stupid or what!?\n");
+    }
+
   exit();
 }
